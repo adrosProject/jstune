@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSTUNE</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+    <!-- My css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--+-----------Info------------+   
+        |___________________________|        
+        |  APP: JSTUNE              |     
+        |___________________________|          
+        |  DEVELOPER: ADRO          |               
+        |___________________________|     
+        |  TIME: 5/9/2022           |     
+        +---------------------------+
+        
+        Descriminal: Not For Commercial Use. Study Purpose only!
+        ___________  বাণিজ্যিক ব্যবহারের জন্য নয়।!
+        -------->   
+ 
+</head>
+    <body>
+        <main class="app">
+
+            <!--------------------- NAV BAR --------------------->
+            <nav class="mb-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="top-navbar">
+                                <div class="nav-wrapper">
+                                    <div class="logo">
+                                        <p><span>js</span><span>tune</span></p>
+                                    </div>
+                                    <div class="button-group">
+                                        <button class="button lime-button animated-button border-none">Setting</button>
+                                        <button class="button lime-button animated-button border-none"><i class="bi bi-github "></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!--------------------- MID SECTION --------------------->
+            <section class="mid-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="play-list-wraper div-box">
+                                <div class="player-list">
+                                    <p class="header-tag"><i class="bi bi-music-note-list"></i>Music list</p>
+                                    <div class="play-list">
+                                        <ul>
+                                            <li>
+                                                <!-- Song name -->
+                                                <p class="header-tag mb-0">Justin Bieber - Love me</p>
+                                                <!-- Singer name -->
+                                                <p class="">Justin Bieber</p>
+                                                <!-- Song status -->
+                                                <p class=""><i class="bi bi-music-note"></i> Playing</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="music-player-wraper div-box" id="wraper">
+                                <div class="music-player">
+                                    <!-- Song banner -->
+                                    <img src="file/images/justin.jpg" id="song-banner" class="img-fluid song-banner" alt="">
+
+                                    <!-- Song image, singer's profile picture-->
+                                    <div class="song-image-wraper">
+                                        <img src="" class="img-fluid song-image" alt="">
+                                    </div>
+                                    <!--  Song name -->
+                                    <p class="song-name mb-0"></p>
+                                    <!-- Singer name -->
+                                    <p class="singer-name header-tag"></p>
+
+                                    <!-- Controler -->
+                                    <div class="music-controlar">
+                                        <!-- Buttons -->
+                                        <div class="controler-buttons">
+                                            <ul>
+                                                <!-- Previus music -->
+                                                <li><button class="button icon-btn" id="prevmusic"><i class="bi bi-arrow-left"></i></button></li>
+                                                
+                                                <!-- Shuffel play -->
+                                                <li>
+                                                    <button class="button icon-btn main-play-btn shuffel-btn">
+                                                        <i class="bi bi-shuffle"></i>
+                                                    </button>
+                                                </li>
+        
+                                                <!-- Pous & play -->
+                                                <li>
+                                                    <button class="button icon-btn main-play-btn" id="playPause">
+                                                        <i class="bi bi-play" id="playPauseIcon"></i>
+                                                    </button>
+                                                </li>
+        
+                                                <!-- Add to__favourite -->
+                                                <li>
+                                                    <button class="button icon-btn main-play-btn favourite-btn">
+                                                        <i class="bi bi-heart"></i>
+                                                    </button>
+                                                </li>
+        
+                                                <!-- Next music -->
+                                                <li><button class="button icon-btn" id="nextbtn"><i class="bi bi-arrow-right"></i></button></i></li>
+                                            </ul>
+                                        </div>
+                                        <!-- Progress bar -->
+                                        <div class="progressbar-wraper">
+                                            <div class="progress-bar">
+                                                <span></span>
+                                            </div>
+                                            <!--------------------- MAIN --------------------->
+                                            <audio src="" id="main_audio"></audio>
+                                        </div>
+
+                                        <!-- song durations's-->
+                                        <div class="song_duration">
+                                            <p class="current"></p>
+                                            <p class="duration"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>        
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--------------------- THE FOOTER --------------------->
+        </main>
+        <!-- Js -->
+        <script src="assets/js/list.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
